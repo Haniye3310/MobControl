@@ -1,6 +1,6 @@
-using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
+using DG.Tweening;
 
 public class Cannon : MonoBehaviour
 {
@@ -35,7 +35,8 @@ public class Cannon : MonoBehaviour
         {
             if (_isTouch) 
             {
-                Instantiate(_soldierPrefab, this.transform.position, Quaternion.identity);
+                Soldier s =Instantiate(_soldierPrefab, this.transform.position, Quaternion.identity);
+                s.transform.DOMove(new Vector3(this.transform.position.x,this.transform.position.y, this.transform.position.z +3), 0.1f,true).SetEase(Ease.Linear);
                 await Task.Delay(1000);
             }
             await Task.Yield();

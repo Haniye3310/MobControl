@@ -14,11 +14,9 @@ public class Soldier : MonoBehaviour
     {
 
         float distanceToDestination = Vector3.Distance(transform.position, _targetTransform.position);
-        Debug.Log($"{distanceToDestination}");
 
         if (distanceToDestination < 1.5f) 
         {
-            Debug.Log("Reach destination");
             Destroy(this.gameObject);
         }
 
