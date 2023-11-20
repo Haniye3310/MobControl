@@ -95,12 +95,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7856090471499520204}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.9442395
+  m_Height: 2.8600364
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.07589352, y: -0.20837665, z: 0.07217324}
 --- !u!114 &7856090471499520194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74477e3b43da06343a6dfcb0c7a32be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetTransform: {fileID: 8109289324777508753, guid: 214eebcca3c7a27449da379e439425c3, type: 3}
+  _enemyTransform: {fileID: 8738630895411265197, guid: 214eebcca3c7a27449da379e439425c3, type: 3}
+  _playerTransform: {fileID: 6257805748691620833, guid: 21db0df7df81a8f4593d39daa9be9b1a, type: 3}
+  _onSoldierReachesEnemyStation: {fileID: 11400000, guid: 75703fde0311dc74c9c527b1d5eb1772, type: 2}
 --- !u!195 &7856090471499520195
 NavMeshAgent:
   m_ObjectHideFlags: 0

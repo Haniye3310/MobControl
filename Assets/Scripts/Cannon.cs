@@ -5,7 +5,7 @@ using DG.Tweening;
 public class Cannon : MonoBehaviour
 {
     [SerializeField] private float _speed = 0.2f;
-    [SerializeField] private Soldier _soldierPrefab;
+    [SerializeField] private Soldier _playerSoldierPrefab;
     private bool _isTouch;
 
     private void Update()
@@ -35,7 +35,7 @@ public class Cannon : MonoBehaviour
         {
             if (_isTouch) 
             {
-                Soldier s =Instantiate(_soldierPrefab, this.transform.position, Quaternion.identity);
+                Soldier s =Instantiate(_playerSoldierPrefab, this.transform.position, Quaternion.identity);
                 s.transform.DOMove(new Vector3(this.transform.position.x,this.transform.position.y, this.transform.position.z +3), 0.1f,true).SetEase(Ease.Linear);
                 await Task.Delay(1000);
             }
