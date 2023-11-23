@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 0.2
   _playerSoldierPrefab: {fileID: 4100828176197259107, guid: 3d1caa88ff228c5449f6e103a27df431, type: 3}
+  _generationDelaySecond: 0.5
 --- !u!1 &6257805748890302759
 GameObject:
   m_ObjectHideFlags: 0

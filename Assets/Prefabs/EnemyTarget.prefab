@@ -287,3 +287,5 @@ MonoBehaviour:
   _health: 20
   _healthText: {fileID: 3075097461006704758}
   _onSoldierReachesEnemyStation: {fileID: 11400000, guid: 75703fde0311dc74c9c527b1d5eb1772, type: 2}
+  _generationDelaySecond: 1
+  _onPlayerWin: {fileID: 11400000, guid: eba7e79ac303b8147aac23d91acebae2, type: 2}

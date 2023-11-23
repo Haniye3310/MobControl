@@ -116,6 +116,7 @@ MonoBehaviour:
   _enemyTransform: {fileID: 8738630895411265197, guid: 214eebcca3c7a27449da379e439425c3, type: 3}
   _playerTransform: {fileID: 6257805748691620833, guid: 21db0df7df81a8f4593d39daa9be9b1a, type: 3}
   _onSoldierReachesEnemyStation: {fileID: 11400000, guid: 75703fde0311dc74c9c527b1d5eb1772, type: 2}
+  _onPlayerLose: {fileID: 11400000, guid: be720e9c4a78fb54c91658d8e190e597, type: 2}
 --- !u!195 &7856090471499520195
 NavMeshAgent:
   m_ObjectHideFlags: 0

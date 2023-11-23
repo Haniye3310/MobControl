@@ -7,6 +7,7 @@ public class Soldier : MonoBehaviour
     [SerializeField] private Transform _enemyTransform;
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private SOChannelEvent _onSoldierReachesEnemyStation;
+    [SerializeField] private SOChannelEvent _onPlayerLose;
     private void Awake()
     {
         if (this.gameObject.tag == "Player")
@@ -29,6 +30,10 @@ public class Soldier : MonoBehaviour
             Destroy(this.gameObject);
             if (this.gameObject.tag == "Player")
                 _onSoldierReachesEnemyStation.Event?.Invoke();
+            if(this.gameObject.tag == "Enemy")
+                _onPlayerLose.Event?.Invoke();
+
+
         }
 
     }
